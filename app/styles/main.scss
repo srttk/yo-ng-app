@@ -42,9 +42,19 @@ body {
   from  { transform:translateX(100%); }
   to    { transform: translateX(0); }
 }
-.ng-enter{
+
+@keyframes slideInLeft {
+  from  { transform:translateX(0); }
+  to    { transform: translateX(100%); }
+}
+.slideInRight.ng-enter{
    animation: slideInRight .3s both ease-in; z-index: 8888;
 }
+
+.slideInLeft.ng-enter{
+   animation: slideInLeft .3s both ease-in; z-index: 8888;
+}
+ 
 /* End Animation*/
 
 /* Custom page footer */
